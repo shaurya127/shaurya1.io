@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="s.css">
+</head>
+
+<body><div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+  </div>
+ <p>You can reach SHAURYA at:</p>
+
+<ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="shaurya1272000@gmail.com">Email</a></li>
+  <li><a href="tel:+919140257102">Phone</a></li>
+</ul>
+  
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="/image/portfolio8.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>SHAURYA PRATAP SINGH</h2>
+          <p>MNIT JAIPUR student</p>
+          <P>Electrical Engineering</P>
+          <P>Web developer </P>
+          <p>2019UEE1692@mnit.ac.in</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="/image/deepak.jpeg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Deepak shukla</h2>
+          <p>MNIT JAIPUR</p>
+          <p>Civil Engineering</p>
+          <p>Youtuber Think India</p>
+          <p>2019uce1685@mnit.ac.in</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+        <div class="card">
+          <img src="/image/shubham.jpeg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>SHUBHAM Rai</h2>
+            <p>MNIT JAIPUR</p>
+            <p>Computer science</p>
+            <p>Coader(Python)</p>
+            <p>2019UCP1732@mnit.ac.in</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/image/pammu.jpeg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>SHASHANK Rathore</h2>
+            <p>MNIT JAIPUR</p>
+            <p>Electrical Engineering</p>
+            <p>Coader (python)</p>
+            <p>2019Uee1684@mnit.ac.in</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+    
+  
+    <div class="column">
+      <div class="card">
+        <img src="/image/aniket.jpeg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Aniket kumar</h2>
+          <p>MNIT JAIPUR</p>
+          <p>Chemical Engineering</p>
+           <p>2019uch1683@mnit.ac.in</p>
+           <p>Coader</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    
+<div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SHAURYA PRATAP SINGH
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="two-column-wrapper">
+        <div class="profile-image-wrapper">
+          <img src="image/profile.jpg" alt="">
+        </div>
+
+        <div class="profile-content-wrapper">
+          <h1>Hi, thanks for visiting my site.</h1>
+          <p>Hello everyone,my self SHAURYA PRATAP SINGH.I am a student of MNIT Jaipur Btech first year and my branch is Electrical Engineering.My future goal is that i want to become a software engineer and for achieving my goal I study hard.Currently , I have knowledge of one programming language and I hope soon I will become a good software engineer.  
+          </p>
+
+          <p>For this reason I decided to utilize a completely different development pattern that focuses on highly focused
+            communication and transparent design patterns. When I take on a project not only do I work to craft the application
+            according to the client's specifications, I give daily updates to ensure that the project is aligning properly
+            with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<body>
+
+    <h1>My DAILY ROUTINE</h1>
+    
+    <div id="piechart"></div>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <script type="text/javascript">
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    // Draw the chart and set the chart values
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Work', 12],
+      ['Eat', 2],
+      ['TV', 1],
+      ['Gym', 1],
+      ['Sleep', 8]
+    ]);
+    
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':'My Average Day', 'width':550, 'height':400};
+    
+      // Display the chart inside the <div> element with id="piechart"
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+    </script>
+    
+    </body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
